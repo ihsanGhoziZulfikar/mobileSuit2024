@@ -9,7 +9,6 @@ import '../models/user_model.dart';
 class UserBloc extends Bloc<UserEvent, UserState> {
   static const _baseUrl = 'https://reqres.in/api/users';
   int _currentPage = 1;
-  final int _perPage = 10;
   List<User> _users = [];
   int _totalPages = 1;
 
